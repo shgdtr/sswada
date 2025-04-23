@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shg Dtr</title>
+</head>
+<body>
+    <iframe
+        src="https://script.google.com/macros/s/AKfycbwwGxsDPp6pYFpxSLN91C9RmX6ciYjw_yU9hKOo6ibkbkVCwkFC8CqNmE7QRw51SOM3Ow/exec"
+        width="100%"
+        height="100%"
+        allowfullscreen="true"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+    </iframe>
+    <script>
+        window.onload = function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                iframe.requestFullscreen().catch((err) => {
+                    console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            }
+        };
+    </script>
+</body>
+</html>
